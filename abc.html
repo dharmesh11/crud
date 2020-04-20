@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<input type="text" name="" id="name">
+<button onclick="checkVal()">Check</button>
+<p id="error"></p>
+<script type="text/javascript">
+	
+	function checkVal() {
+	
+		var val = document.getElementById('name').value;
+
+		var int = parseInt(val);
+		//console.log(typeof(int));
+
+		// var sval = val.split('').reverse().join('');
+		// if(sval == val){
+		// 	console.log(sval);
+		// }else{
+		// 	return null;
+		// }
+		var flag=0;
+		for (var i = 2; i <= int; i++) {
+				if (int%2 == 0){
+					flag = 1;
+					break;
+				}
+			}
+				if (!flag == 1){
+					console.log('its is prime');
+				}else{
+					console.log('its is Not prime');
+
+				}
+		
+		
+		
+		// var spchar = sval.includes('@') || sval.includes('!');
+		// if(spchar == true){
+		// 	console.log(spchar);
+		// 	var fans = sval.splice( sval.indexOf(spchar), 1 );
+		// 	console.log(fans);
+		// 	var rval = sval.reverse();
+		// 	console.log(rval);
+		// 	var jval = rval.join('');
+
+		// 	if(fans == jval){
+		// 		console.log('its palindrome');
+		// 	}else{
+		// 		console.log('its not palindrome');
+		// 	}
+		// }else{
+		// 	console.log('invalid');
+		// }
+	}
+</script>
+</body>
+</html>
